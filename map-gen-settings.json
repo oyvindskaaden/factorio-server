@@ -54,7 +54,7 @@
     "tungsten-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
     "uranium-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5 },
     "zinc-ore" : { "frequency" : 2, "richness" : 2, "size" : 1.5 }
-  }
+  },
 
   "cliff_settings":
   {
