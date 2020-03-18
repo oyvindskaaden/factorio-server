@@ -20,7 +20,6 @@
 
   "autoplace_controls":
   {
-    "coal": {"frequency": 1, "size": 1, "richness": 1},
     "stone": {"frequency": 1, "size": 1, "richness": 1},
     "copper-ore": {"frequency": 1, "size": 1,"richness": 1},
     "iron-ore": {"frequency": 1, "size": 1, "richness": 1},
