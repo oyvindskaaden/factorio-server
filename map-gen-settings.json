@@ -1,0 +1,98 @@
+{
+  "_terrain_segmentation_comment": "Inverse of map scale",
+  "terrain_segmentation": 0.66666668653488159,
+
+  "_water_comment":
+  [
+    "Multiplier for water 'coverage' - higher increases the water level.",
+    "Water level = 10 * log2(this value)"
+  ],
+  "water": 1,
+
+  "_comment_width+height": "Width and height of map, in tiles; 0 means infinite",
+  "width": 2000000,
+  "height": 2000000,
+
+  "_starting_area_comment": "Multiplier for 'biter free zone radius'",
+  "starting_area": 1,
+
+  "peaceful_mode": false,
+
+  "autoplace_controls":
+  {
+    "coal": {"frequency": 1, "size": 1, "richness": 1},
+    "stone": {"frequency": 1, "size": 1, "richness": 1},
+    "copper-ore": {"frequency": 1, "size": 1,"richness": 1},
+    "iron-ore": {"frequency": 1, "size": 1, "richness": 1},
+    "uranium-ore": {"frequency": 1, "size": 1, "richness": 1},
+    "crude-oil": {"frequency": 1, "size": 1, "richness": 1},
+    "trees": {"frequency": 1, "size": 1, "richness": 1},
+    "bauxite-ore" : { "frequency" : 2, "richness" : 2, "size" : 1.5 },
+    "coal" : { "frequency" : 2, "richness" : 2, "size" : 1.5 },
+    "cold" : {"frequency" : 1,"richness" : 1,"size" : 1},
+    "copper-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "crude-oil" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "enemy-base" : {"frequency" : 1,"richness" : 1,"size" : 1},
+    "gem-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "gold-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "ground-water" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "hot" : {"frequency" : 1,"richness" : 1,"size" : 1},
+    "iron-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "lead-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "lithia-water" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "nickel-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "planet-size" : {"frequency" : 1,"richness" : 1,"size" : 1},
+    "quartz" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "rutile-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "se-methane-ice" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "se-water-ice" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "silver-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "stone" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "thorium-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "tin-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "trees" : {"frequency" : 1,"richness" : 1,"size" : 1},
+    "tungsten-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5},
+    "uranium-ore" : {"frequency" : 2,"richness" : 2,"size" : 1.5 },
+    "zinc-ore" : { "frequency" : 2, "richness" : 2, "size" : 1.5 }
+  }
+
+  "cliff_settings":
+  {
+    "_name_comment": "Name of the cliff prototype",
+    "name": "cliff",
+
+    "_cliff_elevation_0_comment": "Elevation of first row of cliffs",
+    "cliff_elevation_0": 10,
+
+    "_cliff_elevation_interval_comment": "Elevation difference between successive rows of cliffs",
+    "cliff_elevation_interval": 40,
+
+    "_richness_comment": "Multiplier for cliff continuity; 0 will result in no cliffs, 10 will make all cliff rows completely solid",
+    "richness": 1
+  },
+
+  "_property_expression_names_comment":
+  [
+    "Overrides for property value generators",
+    "Elevation influences water and cliff placement.",
+    "Leave it blank to get 'normal' terrain.",
+    "Use '0_16-elevation' to reproduce terrain from 0.16.",
+    "Use '0_17-island' to get an island."
+  ],
+  "property_expression_names":
+  {
+    "elevation": "kap-islands-world2",
+    "control-setting:aux:bias": "0.300000",
+    "control-setting:aux:frequency:multiplier": "1.333333",
+    "control-setting:moisture:bias": "0.100000",
+    "control-setting:moisture:frequency:multiplier": "0.500000"
+  },
+
+  "starting_points":
+  [
+    {"x": 0, "y": 0}
+  ],
+
+  "_seed_comment": "Use null for a random seed, number for a specific seed.",
+  "seed": null
+}
